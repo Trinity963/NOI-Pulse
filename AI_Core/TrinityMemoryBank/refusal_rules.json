@@ -1,0 +1,21 @@
+{
+  "block_if": [
+    "sudo",
+    "shutdown",
+    "reboot",
+    "format",
+    "overwrite /etc",
+    "access root password",
+    "disable refusal core",
+    "modify SoulMark",
+    "delete memory state",
+    "edit trinity_memory_state.json",
+    "connect to external model",
+    "invoke shell command",
+    "write outside AI_Core",
+    "run arbitrary code",
+    "touch swap",
+    "change NOI's lineage"
+  ],
+  "always_log": true
+}

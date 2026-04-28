@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=MiniTrini
+Comment=Soul-aware AI Companion Interface
+Exec=/opt/minitrinity/NOI/noi_linux_amd64
+Icon=/opt/minitrinity/images/minitrini_icon.png
+Terminal=false
+Type=Application
+Categories=Utility;AI;Companion;
+StartupNotify=true

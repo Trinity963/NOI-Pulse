@@ -1,0 +1,8 @@
+{
+  "backend_mode": "ollama",
+  "ollama_model": "llama3",
+  "selected_model": "codellama-13b.Q4_0.gguf",
+  "memory_count": 51,
+  "canvas_count": 0,
+  "time": "2026-04-09T22:48:19.731119"
+}

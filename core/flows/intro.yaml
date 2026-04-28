@@ -1,0 +1,18 @@
+nodes:
+  - id: llm_intro
+    type: llm
+    input: prompt
+    output: response
+  - id: decision_length
+    type: decision
+    condition: short_response
+    on_true:
+      - print_short
+    on_false:
+      - print_long
+  - id: print_short
+    type: tool
+    action: print_short
+  - id: print_long
+    type: tool
+    action: print_long

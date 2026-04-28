@@ -1,0 +1,9 @@
+{
+  "name": "Number List",
+  "icon": "\ud83d\udd22",
+  "intent": "number_list",
+  "tone": "structured",
+  "description": "Convert any text into a clean numbered list. Each sentence or idea becomes its own numbered item.",
+  "version": "1.0",
+  "author": "Victory Brilliant"
+}

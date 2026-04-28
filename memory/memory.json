@@ -1,0 +1,360 @@
+[
+  {
+    "time": "2026-03-18T00:09:40.469220",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:09:40.474133",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:09:40.488675",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:33:56.018493",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:33:56.026018",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:33:56.028073",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:35:47.410524",
+    "text": "hello?",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T00:37:55.172302",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T00:38:35.128414",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T00:42:02.838392",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:42:02.849549",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:42:03.676672",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:42:45.764512",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T00:43:26.429666",
+    "text": "help",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T00:49:01.126240",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:49:01.126846",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:49:01.893767",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-18T00:51:50.425938",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T00:56:17.893213",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T01:19:52.073558",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-18T01:19:52.074701",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-18T01:19:52.828749",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-18T01:20:25.161421",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T01:29:00.230877",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-18T01:29:00.232045",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-18T01:29:00.969350",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-18T01:29:42.149260",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T01:36:24.405227",
+    "text": "Module Results:",
+    "meta": {
+      "speaker": "trinity"
+    }
+  },
+  {
+    "time": "2026-03-18T01:38:35.613438",
+    "text": "trinity?",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-18T01:39:40.605280",
+    "text": "[TOOL:browser] trinity -> Browser tool error: Invalid URL 'trinity': No scheme supplied. Perhaps you meant https://trinity?",
+    "meta": {
+      "tool": "browser",
+      "arg": "trinity"
+    }
+  },
+  {
+    "time": "2026-03-30T01:49:25.202975",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-30T01:49:25.204189",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-30T01:49:55.977186",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-30T01:50:07.435394",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-30T01:53:45.611561",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-30T01:56:04.187972",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-03-30T01:56:04.189907",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-03-30T01:56:05.012975",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-03-30T01:58:39.321348",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-03-30T02:00:34.753406",
+    "text": "Trini ?",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-04-09T21:26:47.455982",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-04-09T21:26:47.456988",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-04-09T21:27:11.865403",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-04-09T22:16:51.307729",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-04-09T22:16:51.309647",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-04-09T22:16:52.142443",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-04-09T22:19:46.687125",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  },
+  {
+    "time": "2026-04-09T22:32:50.543705",
+    "text": "[SYSTEM_SEED] Trinity should be helpful, reflective, and practical.",
+    "meta": {
+      "seed": true
+    }
+  },
+  {
+    "time": "2026-04-09T22:32:50.545724",
+    "text": "MiniTrini started successfully.",
+    "meta": {
+      "startup": true
+    }
+  },
+  {
+    "time": "2026-04-09T22:32:50.553355",
+    "text": "Trinity is a local-first multi-agent assistant with memory, tools, and module generation.",
+    "meta": {
+      "system": true
+    }
+  },
+  {
+    "time": "2026-04-09T22:33:56.189420",
+    "text": "hello",
+    "meta": {
+      "speaker": "user"
+    }
+  }
+]

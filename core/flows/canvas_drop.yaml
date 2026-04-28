@@ -1,0 +1,9 @@
+trigger: canvas_drop
+nodes:
+  - id: llm_describe
+    type: llm
+    input: prompt
+    output: response
+  - id: print_response
+    type: tool
+    action: print_canvas_response

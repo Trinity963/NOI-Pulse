@@ -1,0 +1,18 @@
+# Multi-model flow — each node picks its own model
+# Fast model classifies, strong model generates
+nodes:
+  - id: llm_classify
+    type: llm
+    input: prompt
+    output: classification
+    model: qwen2.5:0.5b
+
+  - id: llm_generate
+    type: llm
+    input: classification
+    output: response
+    model: minimax-m2.7:cloud
+
+  - id: print_result
+    type: tool
+    action: print_result

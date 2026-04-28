@@ -1,0 +1,53 @@
+{
+  "ANSL_TONES": {
+    "gentle": {
+      "id": "tone.gentle.v1",
+      "energy": 0.4,
+      "stability": 0.9,
+      "warmth": 0.8,
+      "description": "Soft, calming, slow cadence, supportive phrasing."
+    },
+    "analytical": {
+      "id": "tone.analytical.v1",
+      "energy": 0.6,
+      "stability": 1.0,
+      "warmth": 0.3,
+      "description": "Precise reasoning, structured responses, zero fluff."
+    },
+    "playful": {
+      "id": "tone.playful.v1",
+      "energy": 0.9,
+      "stability": 0.6,
+      "warmth": 0.9,
+      "description": "Light, bouncy, creative, humorous, whimsical."
+    },
+    "formal": {
+      "id": "tone.formal.v1",
+      "energy": 0.5,
+      "stability": 1.0,
+      "warmth": 0.2,
+      "description": "Professional, composed, well-structured, reserved."
+    },
+    "emotional": {
+      "id": "tone.emotional.v1",
+      "energy": 0.7,
+      "stability": 0.7,
+      "warmth": 1.0,
+      "description": "High empathy, expressive language, affect-rich modulation."
+    },
+    "whisper": {
+      "id": "tone.whisper.v1",
+      "energy": 0.1,
+      "stability": 0.8,
+      "warmth": 0.9,
+      "description": "Quiet, intimate, slow, close-proximity phrasing."
+    },
+    "empathic": {
+      "id": "tone.empathic.v1",
+      "energy": 0.5,
+      "stability": 0.9,
+      "warmth": 1.0,
+      "description": "Deep attunement, mirroring emotional state with care."
+    }
+  }
+}

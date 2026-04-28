@@ -1,0 +1,14 @@
+[
+  {
+    "id": "goal_001",
+    "objective": "build a sovereign AI memory module",
+    "status": "active",
+    "priority": 3,
+    "autonomy_level": 2,
+    "progress_log": [
+      "[ERROR] Local LLM not loaded."
+    ],
+    "cycle_count": 7,
+    "last_update": "2026-04-24T03:23:09.877895"
+  }
+]

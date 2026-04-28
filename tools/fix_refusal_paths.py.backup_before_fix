@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+import os
+import shutil
+
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+
+# Wrong → correct mapping
+BAD = "AI_Core/CAI/refusal_rules.json"
+GOOD = "AI_Core/TrinityMemoryBank/refusal_rules.json"
+
+print("\n🔍 Scanning MiniTrini project for incorrect refusal paths...\n")
+
+changed_files = []
+
+for root, dirs, files in os.walk(PROJECT_ROOT):
+    for fname in files:
+        if fname.endswith(".py") or fname.endswith(".json"):
+            full_path = os.path.join(root, fname)
+
+            try:
+                with open(full_path, "r") as f:
+                    text = f.read()
+
+                if BAD in text:
+                    print(f"⚠ Found incorrect path in: {full_path}")
+
+                    # Create backup
+                    backup_path = full_path + ".backup_before_fix"
+                    shutil.copy(full_path, backup_path)
+                    print(f"   → Backup created: {backup_path}")
+
+                    # Apply fix
+                    new_text = text.replace(BAD, GOOD)
+
+                    with open(full_path, "w") as f:
+                        f.write(new_text)
+
+                    print(f"   ✔ Path corrected.")
+                    changed_files.append(full_path)
+
+            except Exception as e:
+                print(f"Error reading {full_path}: {e}")
+
+print("\n==============================")
+print("✔ Auto-patch complete")
+print("==============================\n")
+
+if changed_files:
+    print("Updated files:")
+    for path in changed_files:
+        print("   →", path)
+else:
+    print("No incorrect paths were found.")
+
+print("\nYou may now regenerate refusal_rules.hash and run MiniTrini again.\n")

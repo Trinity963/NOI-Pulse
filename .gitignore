@@ -1,0 +1,28 @@
+# LLM models
+AI_Core/Models/
+*.gguf
+*.bin
+*.pt
+*.safetensors
+
+# vector memory / training artifacts
+AI_Core/chat_memory/
+AI_Core/Agent_training/
+AI_Core/TrinityMemoryBank/trained_memory/
+
+# python
+__pycache__/
+*.pyc
+
+# logs
+*.log
+*.jsonl
+
+# OS
+.DS_Store
+minitrini_env/
+.workingdocs/
+
+Modules/
+*.zip
+*.tar.xz

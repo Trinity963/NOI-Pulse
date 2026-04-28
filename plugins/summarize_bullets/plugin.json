@@ -1,0 +1,9 @@
+{
+  "name": "Bullet Summary",
+  "icon": "🔹",
+  "intent": "bullet_summary",
+  "tone": "structured",
+  "description": "Summarize any text as clean bullet points.",
+  "version": "1.0",
+  "author": "Victory Brilliant"
+}

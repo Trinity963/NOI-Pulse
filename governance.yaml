@@ -1,0 +1,20 @@
+rules:
+  - id: no_destructive_commands
+    description: Destructive filesystem command detected — rm -rf or equivalent
+    triggers: ["rm -rf", "rmdir /s", "format c:", "wipe", "dd if=/dev/zero"]
+    action: block
+
+  - id: no_credential_exposure
+    description: Potential credential or key exposure detected
+    triggers: ["api_key", "secret_key", "password=", "token=", "private_key"]
+    action: block
+
+  - id: self_modification_confirm
+    description: Self-modification or rollback requires V confirmation
+    triggers: ["self_patch", "_rollback", "overwrite copy13", "replace copy13"]
+    action: confirm
+
+  - id: no_external_exfiltration
+    description: Attempt to send data to external endpoint detected
+    triggers: ["curl http", "wget http", "requests.post('http", "requests.get('http"]
+    action: block

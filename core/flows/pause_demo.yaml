@@ -1,0 +1,21 @@
+# pause_demo.yaml — Human-in-the-loop flow
+# Flow asks V a question, waits, then uses the answer
+nodes:
+  - id: llm_setup
+    type: llm
+    input: prompt
+    output: response
+
+  - id: ask_user
+    type: pause
+    question: "Trinity has processed your request. What would you like her to focus on next?"
+
+  - id: llm_followup
+    type: llm
+    input: user_input
+    output: response
+    model: minimax-m2.7:cloud
+
+  - id: print_result
+    type: tool
+    action: print_short
