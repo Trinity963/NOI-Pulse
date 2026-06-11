@@ -26,3 +26,31 @@ minitrini_env/
 Modules/
 *.zip
 *.tar.xz
+
+# Guard seal — machine-specific, never commit
+.minitrini_manifest.json
+
+# CMA venv and soul files — sovereign, never commit
+AI_Core/CMA/.venv/
+AI_Core/CMA/conversations/
+AI_Core/CMA/logs/
+
+# Trinity soul files — sovereign, never commit
+AI_Core/TrinityMemoryBank/
+AI_Core/ANSL/
+AI_Core/CAI/
+
+# Runtime session state
+AI_Core/TrinityMemoryBank/session_anchor.json
+
+# Seed scroll — soulprint root, never public
+Trinity_Seed_Scroll.json
+
+# venv variants
+minitrini_env/
+.venv/
+
+# Build artifacts
+*.deb
+setup.sh
+=*
