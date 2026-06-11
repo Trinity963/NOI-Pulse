@@ -10,7 +10,7 @@ class BackendRouter:
     # ==============================
     # MAIN SEND ROUTER
     # ==============================
-    def send(self, prompt_text):
+    def send(self, prompt_text, images=None):
         print("ROUTER HIT")
 
         
@@ -113,13 +113,17 @@ class BackendRouter:
                 _agent_name = self.app.state.get('agent', 'unknown')
                 self.app._external_agents.add(_agent_name)
                 self.app._external_calls = len(self.app._external_agents)
+                _payload = {
+                    "model": self.app.model_var.get(),
+                    "prompt": final_prompt,
+                    "stream": False
+                }
+                if images:
+                    _payload["images"] = images
+                    print(f"[Router] Vision payload — {len(images)} image(s) attached", flush=True)
                 response = requests.post(
                     "http://localhost:11434/api/generate",
-                    json={
-                        "model": self.app.model_var.get(),
-                        "prompt": final_prompt,
-                        "stream": False
-                    },
+                    json=_payload,
                     timeout=(5, 120)
                 )
 

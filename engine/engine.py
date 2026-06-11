@@ -15,6 +15,19 @@ class MiniTriniEngine:
             user_text = run_tool_logic(tool_obj, user_text)
 
         backend_prompt = self.app.build_backend_prompt(agent_name, tool_obj, user_text)
-        response_text = self.app.backend_router.send(backend_prompt)
+
+        # Vision — extract base64 images from canvas_context if present
+        _images = None
+        _canvas_ctx = getattr(self.app, "_canvas_context", {})
+        if _canvas_ctx:
+            _b64_list = [
+                v["base64"] for v in _canvas_ctx.values()
+                if isinstance(v, dict) and v.get("type") == "image" and v.get("base64")
+            ]
+            if _b64_list:
+                _images = _b64_list
+                print(f"[Engine] Vision — {len(_images)} image(s) from canvas_context", flush=True)
+
+        response_text = self.app.backend_router.send(backend_prompt, images=_images)
 
         return response_text
