@@ -1477,12 +1477,19 @@ class MiniTriniApp:
                     description = f"[Image — {w}x{h}px, {mode} mode, {size_kb}KB — vision inference dormant until GPU]"
                 except Exception as pe:
                     description = f"[Image — {size_kb}KB — metadata read failed: {pe}]"
-                print(f"[CanvasContext] Image metadata captured (vision dormant — awaiting RTX 5090)")
+                img_b64 = None
+                try:
+                    with open(path, "rb") as _f:
+                        img_b64 = base64.b64encode(_f.read()).decode("utf-8")
+                except Exception as be:
+                    print(f"[CanvasContext] base64 encode failed: {be}", flush=True)
+                print(f"[CanvasContext] Image captured — vision ACTIVE", flush=True)
                 self._canvas_context[name] = {
                     "type": "image",
                     "ext": ext,
                     "size_kb": size_kb,
-                    "description": description
+                    "description": description,
+                    "base64": img_b64
                 }
 
             elif ext in AUDIO_EXTS or ext in VIDEO_EXTS:
