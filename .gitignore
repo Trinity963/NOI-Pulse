@@ -52,5 +52,4 @@ minitrini_env/
 
 # Build artifacts
 *.deb
-setup.sh
 =*
