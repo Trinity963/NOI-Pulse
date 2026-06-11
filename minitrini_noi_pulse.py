@@ -1660,7 +1660,16 @@ class MiniTriniApp:
                 prompt = ctx.get("prompt", "")
                 if not prompt:
                     return
-                response = self.backend_router.send(prompt)
+                _images = None
+                _ctx = getattr(self, "_canvas_context", {})
+                if _ctx:
+                    _b64_list = [
+                        v["base64"] for v in _ctx.values()
+                        if isinstance(v, dict) and v.get("type") == "image" and v.get("base64")
+                    ]
+                    if _b64_list:
+                        _images = _b64_list
+                response = self.backend_router.send(prompt, images=_images)
                 self.root.after(0, lambda: self.display_message("⟁ Canvas", response))
             except Exception as e:
                 print(f"[CanvasDropFlow ERROR] {e}")
